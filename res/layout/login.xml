@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context="br.com.casadocodigo.boaviagem.LoginActivity" >
+
+    <ImageView 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_marginBottom="50dp"
+		android:src="@drawable/ic_launcher" />
+         
+    <!-- Campo do login de usuário -->
+    <TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/usuario" />	
+	<EditText
+		android:id="@+id/usuario"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:inputType="text" >
+		<requestFocus />
+	</EditText>	
+	
+	<!-- Campo da senha de usuário -->	
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/senha" />	
+	<EditText
+		android:id="@+id/senha"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:inputType="text" >
+		
+		<requestFocus />	
+		
+	</EditText>
+
+	<!-- Cotão de login para a action -->
+	<Button
+		android:id="@+id/botaoLogin"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom"
+		android:onClick="login"
+		android:text="@string/entrar" />
+	
+</LinearLayout>
