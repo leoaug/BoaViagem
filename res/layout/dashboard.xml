@@ -19,13 +19,15 @@
 		android:layout_height="match_parent"
 		android:background="#015488">
 		
-	    
+	    <!-- Primeira linha -->
 	    <TextView
 			android:id="@+id/novo_gasto"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-	    	android:layout_marginLeft="40dp"
-			android:layout_marginTop="80dp"
+	    	android:paddingLeft="35dp"
+			android:paddingStart="25dp"
+			android:paddingRight="0dp"
+			android:paddingEnd="0dp"
 			android:clickable="true"
 			android:drawableTop="@drawable/ic_launcher"
 			android:onClick="selecionarOpcao"
@@ -39,20 +41,28 @@
 			android:layout_height="wrap_content"
 			android:layout_alignParentRight="true"
 			android:layout_alignTop="@id/novo_gasto"
-			android:layout_marginRight="40dp"
+			android:paddingLeft="25dp"
+			android:paddingStart="25dp"
+			android:paddingRight="8dp"
+			android:paddingEnd="0dp"
 			android:clickable="true"
 			android:drawableTop="@drawable/ic_launcher"
 			android:onClick="selecionarOpcao"
 			android:text="@string/nova_viagem"
 			android:textColor="#FFFFFF"
 			android:textStyle="bold" />
+	    
+	    <!-- Segunda linha -->
 		<TextView
 			android:id="@+id/minhas_viagens"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_alignLeft="@id/novo_gasto"
 			android:layout_alignParentBottom="true"
-			android:layout_marginBottom="120dp"
+			android:paddingLeft="25dp"
+			android:paddingStart="25dp"
+			android:paddingRight="0dp"
+			android:paddingEnd="0dp"
 			android:clickable="true"
 			android:drawableTop="@drawable/ic_launcher"
 			android:onClick="selecionarOpcao"
