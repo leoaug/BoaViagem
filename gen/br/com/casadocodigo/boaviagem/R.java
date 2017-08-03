@@ -25,9 +25,9 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f08000f;
+        public static final int action_settings=0x7f080010;
         public static final int botaoLogin=0x7f080006;
-        public static final int botaoVoltarTipoViagem=0x7f08000e;
+        public static final int botaoVoltarTipoViagem=0x7f08000f;
         public static final int configuracoes=0x7f080003;
         public static final int dataChegada=0x7f08000b;
         public static final int dataSaida=0x7f08000c;
@@ -38,6 +38,7 @@ public final class R {
         public static final int nova_viagem=0x7f080001;
         public static final int novo_gasto=0x7f080000;
         public static final int orcamento=0x7f08000d;
+        public static final int quantidadePessoas=0x7f08000e;
         public static final int senha=0x7f080005;
         public static final int tipoViagem=0x7f080008;
         public static final int usuario=0x7f080004;
@@ -54,6 +55,7 @@ public final class R {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
         public static final int configuracoes=0x7f050009;
+        public static final int criarViagem=0x7f050014;
         public static final int data_da_chegada=0x7f05000f;
         public static final int data_da_saida=0x7f050010;
         /**  label para a tela nova_viagem.xml 
@@ -69,6 +71,7 @@ public final class R {
          */
         public static final int novo_gasto=0x7f050006;
         public static final int orcamento=0x7f050012;
+        public static final int quantidade_de_pessoas=0x7f050013;
         public static final int selecione=0x7f050011;
         public static final int senha=0x7f050003;
         public static final int tipo_da_viagem=0x7f05000b;

@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:gravity="center_vertical"
     android:orientation="vertical"
-    tools:context="br.com.casadocodigo.boaviagem.LoginActivity" >
+    tools:context="br.com.casadocodigo.boaviagem.activity.LoginActivity" >
 
     <ImageView 
 		android:layout_width="wrap_content"
@@ -23,7 +23,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:inputType="text" >
-		<requestFocus />
+	
 	</EditText>	
 	
 	<!-- Campo da senha de usuário -->	
@@ -35,7 +35,7 @@
 		android:id="@+id/senha"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:inputType="text" >
+		android:inputType="textPassword" >
 		
 		<requestFocus />	
 		

@@ -1,9 +1,12 @@
-package br.com.casadocodigo.boaviagem;
+package br.com.casadocodigo.boaviagem.activity;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import br.com.casadocodigo.boaviagem.R;
+import br.com.casadocodigo.boaviagem.R.id;
+import br.com.casadocodigo.boaviagem.R.layout;
 
 
 public class DashboardActivity extends Activity {

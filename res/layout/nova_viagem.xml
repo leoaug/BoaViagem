@@ -52,14 +52,25 @@
 		<TextView android:text="@string/orcamento" />
 		<EditText android:id="@+id/orcamento" android:inputType="numberDecimal" /> 
 
+		
+		<TableRow>
+			<TextView android:layout_width="wrap_content" android:text="@string/quantidade_de_pessoas" />
+			<EditText android:id="@+id/quantidadePessoas" android:inputType="number" />
+		</TableRow>
   		
-		 <Button 
-	        android:id="@+id/botaoVoltarTipoViagem"
-	        android:layout_width="match_parent"
-	        android:layout_height="match_parent"
-	        android:text="@string/voltarTipoViagem"
-	        android:onClick="voltarTipoViagem"/>
-				
+		
+		<TableRow>
+		
+		  <Button android:id="@+id/botaoVoltarTipoViagem" 
+		     	 android:layout_width="match_parent" 
+		     	 android:layout_height="match_parent"
+		     	 android:text="@string/voltarTipoViagem"
+	        	 android:onClick="voltarTipoViagem"/>
+		  
+		  <Button android:onClick="salvarViagem"
+				  android:text="@string/criarViagem" />
+		  
+		</TableRow>		
 	</TableLayout>
 	
     
