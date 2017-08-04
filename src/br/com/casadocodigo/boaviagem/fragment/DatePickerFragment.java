@@ -2,23 +2,22 @@ package br.com.casadocodigo.boaviagem.fragment;
 
 import java.util.Calendar;
 
+
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
-import br.com.casadocodigo.boaviagem.constantes.ConstantesFragment;
+import android.widget.TextView;
+
 
 public class DatePickerFragment extends DialogFragment implements DatePickerDialog.OnDateSetListener {
 
-	private Button dataChegada;
-	private Button dataSaida;
+	private View viewDatePicker;
+	private String dialogFragmenTag;
 	
-	public DatePickerFragment(Button dataChegada, Button dataSaida) {
-		this.dataChegada = dataChegada;
-		this.dataSaida = dataSaida;
-	}
 
 	@Override
 	public Dialog onCreateDialog(Bundle savedInstanceState) {
@@ -39,12 +38,34 @@ public class DatePickerFragment extends DialogFragment implements DatePickerDial
 		final int mes = month;
 		final int dia = day;
 	
-		if(getTag().equals(ConstantesFragment.DIALOG_FRAGMENT_DATA_INICIO.getDialogFragment())){
-			dataChegada.setText(ano + "/" + (mes + 1) + "/" + dia);
-		} else {
-			dataSaida.setText(ano + "/" + (mes + 1) + "/" + dia);
-		}
 		
+		if(getTag().equals(getDialogFragmenTag())) {
+			if(getViewDatePicker() instanceof Button) {
+				((Button) getViewDatePicker()).setText(dia + "/" + (mes + 1) + "/" + ano);
+			} else if(getViewDatePicker() instanceof TextView) {
+				((TextView) getViewDatePicker()).setText(dia + "/" + (mes + 1) + "/" + ano);
+			}
+		}		
 	
 	}
+
+
+	public View getViewDatePicker() {
+		return viewDatePicker;
+	}
+
+	public void setViewDatePicker(View viewDatePicker) {
+		this.viewDatePicker = viewDatePicker;
+	}
+
+	public String getDialogFragmenTag() {
+		return dialogFragmenTag;
+	}
+
+	public void setDialogFragmenTag(String dialogFragmenTag) {
+		this.dialogFragmenTag = dialogFragmenTag;
+	}
+	
+	
+	
 }

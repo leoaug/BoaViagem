@@ -92,6 +92,13 @@ public class LoginActivity extends Activity {
 		}
 	}
 
+	public void limpar(View v) {
+		
+		usuario.setText("");
+		senha.setText("");
+		usuario.requestFocus();
+	}
+	
 	/**
 	 * 
 	 * @author c1260311 AsyncTask <Params, Progress, Result>
@@ -110,6 +117,11 @@ public class LoginActivity extends Activity {
 
 		@Override
 		protected String doInBackground(String... params) {
+			
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {			
+			}
 			
 			if("leoaug".equals(usuarioInformado) && "334863333".equals(senhaInformado)) {	
 				return "sucesso";

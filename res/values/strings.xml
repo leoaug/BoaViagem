@@ -4,9 +4,11 @@
     <string name="app_name">BoaViagem</string>
     <string name="action_settings">Settings</string>
     
+    <!-- label para a tela login.xml -->
+    
+    <string name="imagemLogin">Imagem Login</string>
     <string name="usuario">Informe o Usuário</string>
 	<string name="senha">Informe a Senha</string>
-
 	<string name="erro_autenticacao">Usuário ou Senha inválidos</string>
 	<string name="entrar">Entrar</string>
 	
@@ -21,7 +23,7 @@
 	<string name="tipo_da_viagem">Tipo de Viagem</string>
 	<string name="lazer">Lazer</string>
 	<string name="negocios">Negócios</string>
-	<string name="voltarTipoViagem">Voltar</string>
+
 	<string name="data_da_chegada">Data Chegada</string>
 	<string name="data_da_saida">Data Saída</string>
 	<string name="selecione">Selecione</string>
@@ -29,8 +31,25 @@
 	<string name="quantidade_de_pessoas">Qtde de Pessoas</string>
 	<string name="criarViagem">Criar Viagem</string>
 	
+
+	<!-- Icones e menus do gasto.xml -->	
+	<string name="categoria">Categoria</string>
+	<string-array name="categoria_gasto">
+		 <item>Alimentação</item>
+		 <item>Combustível</item>
+		 <item>Transporte</item>
+		 <item>Hospedagem</item>
+		 <item>Outros</item>
+ 	</string-array>
+	<string name="valor">Valor</string>
+	<string name="data">Data</string>
+	<string name="local">Local</string>
 	
 	
+	<!-- Label voltar para todos botoes -->
+	<string name="voltar">Voltar</string>
+	<string name="limpar">Limpar</string>
+	<string name="descricao">Descrição</string>
 	
 	
 </resources>

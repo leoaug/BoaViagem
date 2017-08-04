@@ -4,50 +4,73 @@
     android:layout_height="match_parent"
     android:gravity="center_vertical"
     android:orientation="vertical"
+    android:background="#000000"
     tools:context="br.com.casadocodigo.boaviagem.activity.LoginActivity" >
 
-    <ImageView 
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_gravity="center"
-		android:layout_marginBottom="50dp"
-		android:src="@drawable/ic_launcher" />
+    
+ 
+	<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:contentDescription="@string/imagemLogin"
+				android:layout_gravity="center"
+				android:layout_marginBottom="50dp"
+				android:src="@drawable/login" />
+	    
+	     
+    
+    
+     <TableLayout android:layout_width="match_parent"
+				  android:layout_height="wrap_content"
+				  android:background="#333333"
+				  android:stretchColumns="*">
+    
+         	<TableRow>
+         	    <!-- Campo label do login de usuário -->
+         	    <TextView android:layout_width="wrap_content"
+						  android:layout_height="wrap_content"
+						  android:text="@string/usuario" />	
+				
+         	     <!-- Campo label da senha de usuário -->	
+				<TextView android:layout_width="wrap_content"
+						  android:layout_height="wrap_content"
+						  android:text="@string/senha" />	
+         	    
+         	</TableRow>    
          
-    <!-- Campo do login de usuário -->
-    <TextView
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="@string/usuario" />	
-	<EditText
-		android:id="@+id/usuario"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:inputType="text" >
+		    
+			<TableRow>
+			   <!-- Campo texto do login de usuário -->
+			    <EditText android:id="@+id/usuario"
+					  android:layout_width="match_parent"
+					  android:layout_height="wrap_content"
+					  android:inputType="text" />
+			    <!-- Campo senha do login de usuário -->
+				<EditText android:id="@+id/senha"
+						 android:layout_width="match_parent"
+						 android:layout_height="wrap_content"
+						 android:inputType="textPassword" />	
+			</TableRow>
+			
+			
+			
+				
+			<TableRow>		
+			<!-- Cotão de login para a action -->
+				<Button android:id="@+id/botaoLogin"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="bottom"
+					android:onClick="login"
+					android:text="@string/entrar" />
+				
+				<Button android:id="@+id/botaoLimparLogin"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="bottom"
+					android:onClick="limpar"
+					android:text="@string/limpar" />
+			</TableRow>
 	
-	</EditText>	
-	
-	<!-- Campo da senha de usuário -->	
-	<TextView
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="@string/senha" />	
-	<EditText
-		android:id="@+id/senha"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:inputType="textPassword" >
-		
-		<requestFocus />	
-		
-	</EditText>
-
-	<!-- Cotão de login para a action -->
-	<Button
-		android:id="@+id/botaoLogin"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_gravity="bottom"
-		android:onClick="login"
-		android:text="@string/entrar" />
+	</TableLayout>
 	
 </LinearLayout>

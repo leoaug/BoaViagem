@@ -1,15 +1,12 @@
 package br.com.casadocodigo.boaviagem.activity;
 
 
-
 import android.app.Activity;
 
-import android.app.DialogFragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.DatePicker;
 import br.com.casadocodigo.boaviagem.R;
 import br.com.casadocodigo.boaviagem.constantes.ConstantesFragment;
 import br.com.casadocodigo.boaviagem.fragment.DatePickerFragment;
@@ -18,11 +15,8 @@ public class ViagemActivity extends Activity {
 
 	
 	private Button dataChegada;
-	private DatePicker pickerDataChegada;
-	
 	private Button dataSaida;
-	private DatePicker pickerDataSaida;
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -38,11 +32,16 @@ public class ViagemActivity extends Activity {
 	
 	public void selecionarData(View view){
 
-		DialogFragment newFragment = new DatePickerFragment(dataChegada,dataSaida);
+		DatePickerFragment newFragment = new DatePickerFragment();
 		if(view.getId() == R.id.dataChegada) {
 			newFragment.show(getFragmentManager(), ConstantesFragment.DIALOG_FRAGMENT_DATA_INICIO.getDialogFragment());
+			newFragment.setViewDatePicker(dataChegada);
+			newFragment.setDialogFragmenTag(newFragment.getTag());
+		
 		} else {
 			newFragment.show(getFragmentManager(), ConstantesFragment.DIALOG_FRAGMENT_DATA_FIM.getDialogFragment());
+			newFragment.setViewDatePicker(dataSaida);
+			newFragment.setDialogFragmenTag(newFragment.getTag());
 		}
 		
 	}
@@ -54,7 +53,10 @@ public class ViagemActivity extends Activity {
 	public void salvarViagem(View view) {
 		
 	}
+	
 	public void voltarTipoViagem(View view) {
 		startActivity(new Intent(this,DashboardActivity.class));
 	}
+	
+
 }

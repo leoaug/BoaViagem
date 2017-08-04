@@ -3,7 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
+   <!-- 
    
+   	android:stretchColumns="1" —The second column (because the column numbers are 0-based) is stretched to take up any available space in the row.
+	android:stretchColumns="0,1" —Both the first and second columns are stretched to take up the available space in the row.
+	android:stretchColumns="*" —All columns are stretched to take up the available space.
+    -->
     
     <TableLayout
 		android:layout_width="match_parent"
@@ -32,10 +37,10 @@
 		<TableRow>
 		    
 		    <TextView android:text="@string/tipo_da_viagem" />
-				<RadioGroup android:id="@+id/tipoViagem" android:orientation="horizontal" >
-					<RadioButton android:id="@+id/lazer" android:checked="true" android:text="@string/lazer" />
-					<RadioButton android:id="@+id/negocios" android:layout_marginLeft="30dp" android:text="@string/negocios" />
-				</RadioGroup>
+			<RadioGroup android:id="@+id/tipoViagem" android:orientation="horizontal" >
+				<RadioButton android:id="@+id/lazer" android:checked="true" android:text="@string/lazer" />
+				<RadioButton android:id="@+id/negocios" android:layout_marginLeft="30dp" android:text="@string/negocios" />
+			</RadioGroup>
 		    
 		</TableRow>
 		
@@ -45,8 +50,19 @@
 			<TextView android:layout_gravity="center" android:text="@string/data_da_saida" />
 		</TableRow>
 		<TableRow>
-			<Button android:id="@+id/dataChegada" android:onClick="selecionarData" android:text="@string/selecione" />
-			<Button android:id="@+id/dataSaida" android:onClick="selecionarData" android:text="@string/selecione" />
+			<Button android:id="@+id/dataChegada" 
+			    	android:onClick="selecionarData" 
+			    	android:text="@string/selecione" 
+			    	android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					 />
+			
+			<Button android:id="@+id/dataSaida" 
+			    	android:onClick="selecionarData" 
+			    	android:text="@string/selecione" 
+			    	android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					 />
 		</TableRow>
 
 		<TextView android:text="@string/orcamento" />
@@ -64,11 +80,13 @@
 		  <Button android:id="@+id/botaoVoltarTipoViagem" 
 		     	 android:layout_width="match_parent" 
 		     	 android:layout_height="match_parent"
-		     	 android:text="@string/voltarTipoViagem"
-	        	 android:onClick="voltarTipoViagem"/>
+		     	 android:text="@string/voltar"
+	        	 android:onClick="voltarTipoViagem"
+	        	 />
 		  
 		  <Button android:onClick="salvarViagem"
-				  android:text="@string/criarViagem" />
+				  android:text="@string/criarViagem"
+				   />
 		  
 		</TableRow>		
 	</TableLayout>
