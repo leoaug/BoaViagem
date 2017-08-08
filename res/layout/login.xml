@@ -18,46 +18,46 @@
 	    
 	     
     
-    
-     <TableLayout android:layout_width="match_parent"
-				  android:layout_height="wrap_content"
-				  android:background="#333333"
-				  android:stretchColumns="*">
-    
-         	<TableRow>
-         	    <!-- Campo label do login de usuário -->
+		 <!-- Campo label do login de usuário -->
          	    <TextView android:layout_width="wrap_content"
 						  android:layout_height="wrap_content"
+						  android:textColor="#FFFFFF"
 						  android:text="@string/usuario" />	
 				
+         	      <!-- Campo texto do login de usuário -->
+			    <EditText android:id="@+id/usuario"
+					  android:layout_width="match_parent"				
+					  android:layout_height="wrap_content"	
+					  android:background="#335288"		
+					  android:textColor="#FFFFFF"	 
+					  android:inputType="text" />
+         	    
+         	    
          	     <!-- Campo label da senha de usuário -->	
 				<TextView android:layout_width="wrap_content"
 						  android:layout_height="wrap_content"
+						  android:textColor="#FFFFFF"
 						  android:text="@string/senha" />	
-         	    
-         	</TableRow>    
-         
-		    
-			<TableRow>
-			   <!-- Campo texto do login de usuário -->
-			    <EditText android:id="@+id/usuario"
-					  android:layout_width="match_parent"
-					  android:layout_height="wrap_content"
-					  android:inputType="text" />
+         	    			 
 			    <!-- Campo senha do login de usuário -->
 				<EditText android:id="@+id/senha"
 						 android:layout_width="match_parent"
-						 android:layout_height="wrap_content"
-						 android:inputType="textPassword" />	
-			</TableRow>
-			
-			
-			
-				
+						 android:background="#335288"	
+						 android:textColor="#FFFFFF"	
+						 android:layout_height="wrap_content"						
+						 android:inputType="textPassword" />
+	
+    
+     <TableLayout android:layout_width="match_parent"
+				  android:layout_height="wrap_content"
+				  android:background="#000000"
+				 android:stretchColumns="*" >
+    
+         
 			<TableRow>		
 			<!-- Cotão de login para a action -->
 				<Button android:id="@+id/botaoLogin"
-					android:layout_width="match_parent"
+					android:layout_width="match_parent"				
 					android:layout_height="wrap_content"
 					android:layout_gravity="bottom"
 					android:onClick="login"

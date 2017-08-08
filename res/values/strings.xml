@@ -50,6 +50,7 @@
 	<string name="voltar">Voltar</string>
 	<string name="limpar">Limpar</string>
 	<string name="descricao">Descrição</string>
-	
+	<string name="sair">Sair</string>
+
 	
 </resources>

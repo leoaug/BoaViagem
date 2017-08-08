@@ -41,6 +41,8 @@ public class LoginActivity extends Activity {
 		toast = Toast.makeText(this, getString(R.string.erro_autenticacao),Toast.LENGTH_SHORT);
 	
 		
+		usuario.setText("");
+		senha.setText("");
 		usuario.requestFocus();
 	}
 
@@ -118,6 +120,9 @@ public class LoginActivity extends Activity {
 		@Override
 		protected String doInBackground(String... params) {
 			
+			/**
+			 * simulando um processamento para testar a mensagem de loading
+			 */
 			try {
 				Thread.sleep(3000);
 			} catch (InterruptedException e) {			

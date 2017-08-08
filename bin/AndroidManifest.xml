@@ -33,6 +33,9 @@
         <activity android:name="br.com.casadocodigo.boaviagem.activity.DashboardActivity" />
         <activity android:name="br.com.casadocodigo.boaviagem.activity.ViagemActivity" />
         <activity android:name="br.com.casadocodigo.boaviagem.activity.GastoActivity" />
+        <activity android:name="br.com.casadocodigo.boaviagem.listactivity.ViagemListActivity" />
+        <activity android:name="br.com.casadocodigo.boaviagem.listactivity.GastoListActivity" />
+        
     </application>
 
 </manifest>

@@ -85,13 +85,7 @@
 			android:textColor="#FFFFFF"
 			android:textStyle="bold" />
 	    
-		<Button android:id="@+id/botaoVoltarDashBoard"
-		    	android:layout_alignBottom="@id/minhas_viagens"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="@string/voltar"
-		    	android:onClick="voltarDashBoard"
-		    />
+		
 		
 	 </RelativeLayout>   
     
